@@ -1,5 +1,6 @@
-<app-card></app-card>
-<app-card></app-card>
+<app-card [number]="store.a"></app-card>
+<app-card [number]="store.b"></app-card>
 
-<button>Start</button>
-<button>Start</button>
+<button (click)="start()" nz-button nzType="primary">Start</button>
+<button (click)="stop()" nz-button nzType="primary">Stop</button>
+<button (click)="store.reset()" nz-button nzType="primary">Reset</button>
